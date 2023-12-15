@@ -11,8 +11,8 @@ type Furniture struct {
 	Height   float32
 }
 
-func (f Furniture) Print() {
-	fmt.Print("тип мебели ", f.Type, "\nцвет ", f.Color, "\nматериал ", f.Material, "\nдлина ", f.Length, "\nширина ", f.Width, "\nвысота ", f.Height, "\n")
+func (f Furniture) FurniturePrint() {
+	fmt.Println("\n\tтип мебели: ", f.Type, "\n\tцвет: ", f.Color, "\n\tматериал: ", f.Material, "\n\tдлина: ", f.Length, "\n\tширина: ", f.Width, "\n\tвысота: ", f.Height, "\n")
 }
 
 // кухня

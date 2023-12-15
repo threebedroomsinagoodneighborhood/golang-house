@@ -1,4 +1,4 @@
-package house
+package main
 
 import "house/assets"
 
