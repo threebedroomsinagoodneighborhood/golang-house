@@ -15,35 +15,36 @@ func (f Furniture) FurniturePrint() {
 	fmt.Println("\n\tтип мебели: ", f.Type, "\n\tцвет: ", f.Color, "\n\tматериал: ", f.Material, "\n\tдлина: ", f.Length, "\n\tширина: ", f.Width, "\n\tвысота: ", f.Height, "\n")
 }
 
+// общие
+type Table struct { //стол
+	Furniture Furniture
+}
+
+type Chair struct { //стул
+	Furniture Furniture
+}
+type Cabinet struct { //шкафчик
+	Furniture Furniture
+}
+
 // кухня
-type Table struct {
+type Fridge struct { //холодильник
 	Furniture Furniture
 }
-
-type Chair struct {
-	Furniture Furniture
-}
-type Cabinet struct {
-	Furniture Furniture
-}
-
-type Fridge struct {
-	Furniture Furniture
-}
-type Stove struct {
+type Stove struct { //плита
 	Furniture Furniture
 }
 
 // ванная
-type Toilet struct {
+type Toilet struct { //туалет
 	Furniture Furniture
 }
 
-type Bathtub struct {
+type Bathtub struct { //ванная
 	Furniture Furniture
 }
 
 // спальня
-type Bed struct {
+type Bed struct { //кровать
 	Furniture Furniture
 }

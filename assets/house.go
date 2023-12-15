@@ -24,10 +24,11 @@ type House struct {
 func CreateHouse() House {
 	fmt.Println("создание дома начато:\n")
 	fmt.Println("создание комнат\n")
-	room_list := Rooms{Living_room: rooms.CreateLiving_room(),
-		Bedroom:  rooms.CreateBedroom(),
-		Bathroom: rooms.CreateBathroom(),
-		Kitchen:  rooms.CreateKitchen()}
+	room_list := Rooms{
+		Living_room: rooms.CreateLiving_room(),
+		Bedroom:     rooms.CreateBedroom(),
+		Bathroom:    rooms.CreateBathroom(),
+		Kitchen:     rooms.CreateKitchen()}
 	fmt.Println("\nвсе комнаты созданы\n")
 	house := House{Rooms: room_list,
 		Residents: residents.CreateFamily(),

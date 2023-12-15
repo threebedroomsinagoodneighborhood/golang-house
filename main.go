@@ -16,3 +16,4 @@ func main() {
 //func main() {
 //	showHouse()
 //}
+//вывод инфромации внутри CreateHouse, все виды мебели расписаны в комментариях внутри furniture
